@@ -2,7 +2,7 @@
   <nav>
     <NavBar></NavBar>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
     <router-link to="/operation">Operation</router-link>
   </nav>
   <router-view />
@@ -12,12 +12,14 @@
 <script>
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
+import Operation from "@/components/Operation.vue";
 
 export default {
   name: "App",
   components: {
     'NavBar': NavBar,
     'Footer': Footer,
+    'Operation': Operation,
   }
 }
 </script>
